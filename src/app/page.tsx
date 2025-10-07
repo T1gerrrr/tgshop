@@ -1,12 +1,21 @@
 import styles from "./page.module.css";
-
+import logo from "./images/icon.png";
+import Image from "next/image";
 export default function Home() {
   return (
     <div className={styles.page}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <nav className={styles.navbar}>
-          <div className={styles.logo}>TG</div>
+          <a href="/" className={styles.brand} aria-label="Trang chủ">
+            <Image
+              src={logo}           
+              alt=""
+              width={55}
+              height={50}
+              priority           
+            />
+          </a>
           <ul className={styles.navLinks}>
             <li><a href="#products">Sản Phẩm</a></li>
             <li><a href="#contact">Liên Hệ</a></li>
@@ -19,7 +28,7 @@ export default function Home() {
             ANTS STUDIO
           </h1>
           <p className={styles.heroSubtitle}>
-            WEBSITE - FIVEM SERVICE 
+            WEBSITE - FIVEM SERVICE
           </p>
           <div className={styles.heroCtas}>
             <button className={styles.ctaPrimary}>Khám Phá Ngay</button>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import tigerIcon from "./images/icon_tiger.png";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ANTS STUDIO - Website & FiveM Service",
-  description: "Chuyên cung cấp dịch vụ website và FiveM chất lượng cao",
+  title: "TIGERKON WEBSITE",
+  // Use Next.js recommended metadata shape for icons. Point to files in the `public/` folder.
+icons: {
+    icon: [
+      { url: "/icon.png", sizes: "any" },              // từ public/favicon.ico
+      { url: "/icon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: "/apple-touch-icon.png",                       // từ public/apple-touch-icon.png
+    shortcut: "/icon.png",
+  },
+
 };
 
 export default function RootLayout({
