@@ -1,14 +1,14 @@
 import styles from "./page.module.css";
-import logo from "./images/icon.png";
-import Image from "next/image";
-import Link from "next/link";
+// import logo from "./images/icon.png";
+// import Image from "next/image";
+// import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <nav className={styles.navbar}>
-          <Link href="/" className={styles.brand} aria-label="Trang chủ">
+          {/* <Link href="/" className={styles.brand} aria-label="Trang chủ">
             <Image
               src={logo}
               alt="ANTS STUDIO logo"
@@ -16,7 +16,7 @@ export default function Home() {
               height={50}
               priority
             />
-          </Link>
+          </Link> */}
           <ul className={styles.navLinks}>
             <li><a href="#products">Sản Phẩm</a></li>
             <li><a href="#contact">Liên Hệ</a></li>
