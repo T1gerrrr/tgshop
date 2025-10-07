@@ -11,7 +11,7 @@ export default function Home() {
           <Link href="/" className={styles.brand} aria-label="Trang chủ">
             <Image
               src={logo}
-              alt=""
+              alt="ANTS STUDIO logo"
               width={55}
               height={50}
               priority
